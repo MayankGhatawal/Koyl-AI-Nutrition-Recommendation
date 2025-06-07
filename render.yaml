@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: koyl-nutrition-backend
+    env: python
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && gunicorn main:app"
+    plan: free
