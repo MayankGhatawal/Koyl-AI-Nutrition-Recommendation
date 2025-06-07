@@ -3,5 +3,5 @@ services:
     name: koyl-nutrition-backend
     env: python
     buildCommand: "cd backend && pip install -r requirements.txt"
-    startCommand: "cd backend && gunicorn main:app"
+    startCommand: "cd backend && uvicorn main:app --reload"
     plan: free
