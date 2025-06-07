@@ -9,7 +9,7 @@ function NutritionForm({ setOutput, setLoading }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/api/recommend', {
+      const res = await fetch(`${import.meta.env.VITE_APP_SERVER_URL}/api/recommend`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ symptoms, allergies })
