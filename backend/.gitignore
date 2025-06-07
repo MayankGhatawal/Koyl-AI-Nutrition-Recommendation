@@ -1,0 +1,52 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.envrc
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Model and data files
+*.pth
+*.pt
+*.h5
+*.ckpt
+*.onnx
+*.tflite
+*.bin
+*.npz
+*.npy
+
+# Transformer cache
+~/.cache/
+.cache/
+**/.cache/
+**/cache/
+
+# FastAPI generated OpenAPI cache
+openapi.json
+
+# Sensitive files
+secrets.*
+config.*
+
+# Source files if uploaded separately
+sources.json
